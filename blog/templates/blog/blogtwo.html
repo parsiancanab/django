@@ -1,0 +1,108 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid" dir="rtl">
+      <a href="{% url 'blog-blog' %}" class="btn btn-default farsi" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> صفحه قبل</a>
+      <h1 class="farsi">خدمات ، کشت و صنعت</h1>
+    </div>
+    <ul class="nav nav-tabs mt-3 farsi" dir="rtl" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">درباره‌ی طرح</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">انعقاد قرارداد</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">تأمین نهاده رایگان</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">ارائه خدمات کشاورزی</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="isabled-tab" data-bs-toggle="tab" data-bs-target="#isabled-tab-pane" type="button" role="tab" aria-controls="isabled-tab-pane" aria-selected="false">پشتیبانی و فروش</button>
+        </li>
+      </ul>
+      <div class="tab-content justify-content-end" dir="rtl" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="isabled-tab-pane" role="tabpanel" aria-labelledby="isabled-tab" tabindex="0">...</div>
+      </div>
+{% endblock content %}
+<div class="col-md-4">
+  {% block main %}
+  <div class="col-md-4">
+  <div class="content-section">
+    <div class="content">
+      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+    </div>
+    <h3 class="farsi" dir="rtl">درباره پارسیان کنب</h3>
+    <div class="content-section">
+      <ul class="list-group farsi" dir="rtl">
+        <li class="list-group-item list-group-item-light"><h4>اطلاعات</h4></li>
+          <p class="farsi mb-3 mt-2">شرکت سهامی خاص کشت و صنعت نوین بذر پارسیان کنب، در سال ۱۳۹۲ حول موضوع اجرا و توسعه طرح علمی و تحقیقاتی کشت و صنعت در چارچوب قانون، ثبت و تأسیس گردیده است.  </p>
+          <div class="flaot">
+            <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> درباره</a>
+          </div>
+        <li class="list-group-item list-group-item-light"><h4>ارتباطات</h4></li>
+          <p class="farsi mt-2">
+            در این بخش شما می‌توانید به صورت مستقیم با عوامل شرکت ارتباط برقرار نموده و در موارد مورد نیاز همکاری و همراهی نمایید.
+          </p>
+          <div>
+            <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  تماس</a>
+          </div>
+        <li class="list-group-item list-group-item-light"><h4>عضویت</h4></li>
+        <div>
+          <p class="farsi mt-2">
+            در این بخش شما می‌توانید با استفاده از لینک مربوطه نسبت به تکمیل فرم و عضویت در مجموعه مجازی کشت  صنعت کنب اقدام نمایید و بدین ترتیب در جریان طرحهای تولیدی و تجاری، اخبار و نحوه سرمایه گذاری در شرکت قرار بگیرید. 
+          </p>
+          <a href="{% url 'subscription' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  عضویت</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+    <div class="content-section farsi" dir="rtl">
+      <div class="content">
+        <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+      </div>
+      <h3>نوار ابزار جانبی</h3>
+      <p class='text'>سایر اطلاعات و نویسه‌ها
+        <ul class="list-group farsi">
+          <li class="list-group-item list-group-item-light">آخرین نویسه‌ها</li>
+          <li class="list-group-item list-group-item-light">اخبار و اطلاعات</li>
+          <li class="list-group-item list-group-item-light">تقویم روز</li>
+          <li class="list-group-item list-group-item-light">دیگر موارد</li>
+        </ul>
+      </p>
+    </div>
+    <div class="content-section" dir="rtl">
+      <div class="content">
+        <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+      </div>
+      <h3>اطلاعات</h3>
+      <div>
+      <div class="content-section">
+        <h3>زمان</h3>
+        <p>ساعت و تاریخ روز:<p id="demo"></p></p>
+        <a href="{% url 'blog-blog' %}" dir="rtl" class="farsi btn btn-info"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  پارسیان کنب</a>
+      </div>
+      <div class="content-section" dir="ltr">
+        <h3 class="farsi">نرخ برابری رمزارزها</h3>
+        <div id="currency-container">
+        </div>    
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'blog/main.js' %}"></script>
+  
+  {% endblock %}
+</div>
+
+{% block footer %}
+{% if show_custom_footer %}
+  <p>&copy; https://canab.ir. Custom footer</p>
+{% else %}
+  {{ block.super }}
+{% endif %}
+{% endblock %}

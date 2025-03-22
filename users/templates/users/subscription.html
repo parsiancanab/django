@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<h1>Subscription</h1>
+  <div class="content-section">
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="form-group">
+          <div>
+            <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+          </div>
+          <center><img class="justify-content-end" src="{% static '/blog/dried rose buds.png' %}" style="align-self: end;"  width="400" ></center>
+          <legend class="border-bottom mb-4 m-1"><small class="small">Welcome to the Parsian Canab Crop the New Agricultural and Industrial Company, PCNB Co. You can subscribe to our mailing list to consider related news and business plan conditions to approach connecting solutions. Please fill out the form below.</small></legend>
+          {{ form|crispy }}
+        </fieldset>
+        <div>
+          <button class="farsi btn btn-outline-info mb-3" role="button" type="submit" dir="rtl"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> Subscribe</button>
+        </div>
+    </form>
+  </div>
+{% endblock content %}

@@ -1,0 +1,103 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<h1 class="farsi" dir="rtl">عضویت عمومی</h1>
+  <div class="content-section">
+    <form method="post">
+        {% csrf_token %}
+        <fieldset class="form-group" dir="rtl">
+          <div>
+            <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+          </div>
+          <center><img class="justify-content-end" src="{% static '/blog/dried rose buds.png' %}" style="align-self: end;"  width="400" ></center>
+          <legend class="farsi border-bottom mb-4 m-1" dir="rtl"><small class="small">خواهشمند است جهت آشنایی با طرحهای تولیدی تجاری شرکت کشت و صنعت نوین بذر پارسیان کنب، همراهی با شرکت مجازی و ثبت درخواست عضویت در جامع اقتصادی کنب، در صورت تمایل فرم زیر را تکمیل فرمایید</small></legend>
+          {{ form|crispy }}
+        </fieldset>
+        <div class="farsi">
+          <button class="farsi btn btn-outline-info mb-3" role="button" type="submit" dir="rtl"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> ثبت درخواست</button>
+        </div>
+    </form>
+  </div>
+{% endblock content %}
+</div>
+
+{% block main %}
+<div class="col-md-4">
+<div class="content-section">
+  <div class="content">
+    <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+  </div>
+  <h3 class="farsi" dir="rtl">درباره پارسیان کنب</h3>
+  <div class="content-section">
+    <ul class="list-group farsi" dir="rtl">
+      <li class="list-group-item list-group-item-light"><h4>اطلاعات</h4></li>
+        <p class="farsi mb-3 mt-2">شرکت سهامی خاص کشت و صنعت نوین بذر پارسیان کنب، در سال ۱۳۹۲ حول موضوع اجرا و توسعه طرح علمی و تحقیقاتی کشت و صنعت در چارچوب قانون، ثبت و تأسیس گردیده است.  </p>
+        <div class="flaot">
+          <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> درباره</a>
+        </div>
+      <li class="list-group-item list-group-item-light"><h4>ارتباطات</h4></li>
+        <p class="farsi mt-2">
+          در این بخش شما می‌توانید به صورت مستقیم با عوامل شرکت ارتباط برقرار نموده و در موارد مورد نیاز همکاری و همراهی نمایید.
+        </p>
+        <div>
+          <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  تماس</a>
+        </div>
+      <li class="list-group-item list-group-item-light"><h4>عضویت</h4></li>
+      <div>
+        <p class="farsi mt-2">
+          در این بخش شما می‌توانید با استفاده از لینک مربوطه نسبت به تکمیل فرم و عضویت در مجموعه مجازی کشت  صنعت کنب اقدام نمایید و بدین ترتیب در جریان طرحهای تولیدی و تجاری، اخبار و نحوه سرمایه گذاری در شرکت قرار بگیرید. 
+        </p>
+        <a href="{% url 'subscription' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  عضویت</a>
+      </div>
+    </ul>
+  </div>
+</div>
+  <div class="content-section farsi" dir="rtl">
+    <div class="content">
+      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+    </div>
+    <h3>نوار ابزار جانبی</h3>
+    <p class='text'>سایر اطلاعات و نویسه‌ها
+      <ul class="list-group farsi">
+        <li class="list-group-item list-group-item-light">آخرین نویسه‌ها</li>
+        <li class="list-group-item list-group-item-light">اخبار و اطلاعات</li>
+        <li class="list-group-item list-group-item-light">تقویم روز</li>
+        <li class="list-group-item list-group-item-light">دیگر موارد</li>
+      </ul>
+    </p>
+  </div>
+  <div class="content-section" dir="rtl">
+    <div class="content">
+      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+    </div>
+    <h3>اطلاعات</h3>
+    <div>
+    <div class="content-section">
+      <h3>زمان</h3>
+      <p>ساعت و تاریخ روز:<p id="demo"></p></p>
+      <a href="{% url 'blog-blog' %}" dir="rtl" class="farsi btn btn-info"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  پارسیان کنب</a>
+    </div>
+    <div class="content-section" dir="ltr">
+      <h3 class="farsi">نرخ برابری رمزارزها</h3>
+      <div id="currency-container">
+      </div>    
+    </div>
+  </div>
+</div>
+<script src="{% static 'blog/main.js' %}"></script>
+
+{% endblock %}
+</div>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+            <li class="{{ message.tags }}">
+                {{ message }}
+            </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+  

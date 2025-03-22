@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+*.log
+media/
+
+django_env/
+__pychache__/
+django.db.backends.postgresql/
+.env

@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content">
+        <h2>Calendar</h2>
+        {{ calendar_html|safe }}
+    </div>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+            <li class="{{ message.tags }}">
+                {{ message }}
+            </li>
+        {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endblock content %}

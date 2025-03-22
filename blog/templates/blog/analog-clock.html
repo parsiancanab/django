@@ -1,0 +1,54 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 6px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+.hour, .minute, .second {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.7, 1);
+}
+.minute {
+    background-color: #666;
+    height: 1px;
+}
+</style>
+</head>
+<body>
+<div class="clock">
+<div class="hour" id="hour"></div>
+<div class="minute" id="minute"></div>
+<div class="second" id="second"></div>
+</div>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    const hour = now.getHours() % 12;
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+    
+    const hourHand = document.getElementById('hour');
+    const minuteHand = document.getElementById('minute');
+    const secondHand = document.getElementById('second');
+
+    hourHand.style.transform = `rotate(${(hour * 30) + (minute * 0.5) + 90}deg)`;
+    minuteHand.style.transform = `rotate(${(minute * 6) + 90}deg)`;
+    secondHand.style.transform = `rotate(${(second * 6) + 90}deg)`;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // Initial call to avoid delay in showing the clock
+</script>
+{% endblock content %}

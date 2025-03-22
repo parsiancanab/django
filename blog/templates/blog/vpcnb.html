@@ -1,0 +1,37 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <h1>PCNB Virtual Company</h1>
+    <p>Welcome to the Parsian Canab Crop the New Agricultural and Industrial Company, PCNB. <br>
+        At this link you will be inform through out the PCNB's virtual sections to maintain real-time connections.
+    </p>
+    <div class="navbar bg-body-tertiary">
+      <a href="{% url 'blog-about' %}" class="btn btn-default" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> About</a>
+      <a href="/" class="btn btn-default" role="button">Home <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"></a>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'blog-about' %}">
+        </a>
+      </div>
+    <nav>
+        <div class="nav nav-tabs mt-3" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-CEO-tab" data-bs-toggle="tab" data-bs-target="#nav-CEO" type="button" role="tab" aria-controls="nav-CEO" aria-selected="true">CEO</button>
+          <button class="nav-link" id="nav-COO-tab" data-bs-toggle="tab" data-bs-target="#nav-COO" type="button" role="tab" aria-controls="nav-COO" aria-selected="false">COO</button>
+          <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CTO" type="button" role="tab" aria-controls="nav-CTO" aria-selected="false">CTO</button>
+          <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CISO" type="button" role="tab" aria-controls="nav-CISO" aria-selected="false">CISO</button>
+          <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CIO" type="button" role="tab" aria-controls="nav-CIO" aria-selected="false">CIO</button>
+          <button class="nav-link" id="nav-R&D-tab" data-bs-toggle="tab" data-bs-target="#nav-R&D" type="button" role="tab" aria-controls="nav-R&D" aria-selected="false">R&D</button>
+          <button class="nav-link" id="nav-Info-tab" data-bs-toggle="tab" data-bs-target="#nav-Info" type="button" role="tab" aria-controls="nav-Info" aria-selected="false">Info</button>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane mt-5 active" id="nav-CEO" role="tabpanel" aria-labelledby="nav-CEO-tab" tabindex="0"><h3>Chief Executive Officer</h3><p>In this virtual section, you will be able to connect directly to the chief executive Officer of the Parsian Canab Crop the New agricultural and Industrial company.<br>ceo@pcnb.ir</p><br><p><a href="mailto:parsiancanab@gmail.com">Direct email</a></p><br></div>
+        <div class="tab-pane mt-5" id="nav-COO" role="tabpanel" aria-labelledby="nav-COO-tab" tabindex="0"><h3>Chief Operative Officer</h3><p>coo@pcnb.ir</p></div>
+        <div class="tab-pane mt-5" id="nav-CTO" role="tabpanel" aria-labelledby="nav-CTO-tab" tabindex="0"><h3>Chief Technical Officer</h3><p>cto@pcnb.ir</p></div>
+        <div class="tab-pane mt-5" id="nav-CISO" role="tabpanel" aria-labelledby="nav-CISO-tab" tabindex="0"><h3>Chief Information Security Officer</h3><p>ciso@pcnb.ir</p></div>
+        <div class="tab-pane mt-5" id="nav-CIO" role="tabpanel" aria-labelledby="nav-CIO-tab" tabindex="0"><h3>Chief Innovation Officer</h3><p>cio@pcnb.ir</p></div>
+        <div class="tab-pane mt-5" id="nav-R&D" role="tabpanel" aria-labelledby="nav-R&D-tab" tabindex="0"><h3>Research and Development</h3><p>research@pcnb.ir</p></div>
+        <div class="tab-pane mt-5" id="nav-Info" role="tabpanel" aria-labelledby="nav-Info-tab" tabindex="0"><h3>Information</h3><p>info@pcnb.ir</p></div>
+      </div>
+        
+{% endblock content %}

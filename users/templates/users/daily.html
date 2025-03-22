@@ -1,0 +1,41 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h1>Daily Calendar</h1>
+    <h2>{{ today }}</h2>
+    <h3>{{ daily_calendar }}</h3>
+    <h2>{{ current_date }}</h2>
+    <div>
+        <p>Current Time: {{ current_time }}</p>
+        <p>Current_date: {{ current_date }}</p>
+    </div>
+    <table>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        {% for week in calendar %}
+            <tr>
+                {% for day in week %}
+                    {% if day == current_date %}
+                        <td class="current-date">{{ day.day }}</td>
+                    {% else %}
+                        <td>{{ day.day }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+
+        {% for event in events %}
+            <p>{{ event.title }}</p>
+            <p>{{ event.description }}</p>
+        {% empty %}
+            <p>No events found for today.</p>
+        {% endfor %}
+{% endblock content %}

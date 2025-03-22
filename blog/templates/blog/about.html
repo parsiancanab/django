@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+  <h1 class="m-2">About PCNB Co.</h1>
+  <div class="navbar bg-body-tertiary">
+    <a href="{% url 'blog-vpcnb' %}" class="btn btn-default" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> VPCNB</a>
+    <a href="/" class="btn btn-default" role="button">Home <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"></a>
+  </div>
+    <img class="content" src="{% static '/blog/IMG_0174,.jpg' %}" alt="">
+    <div class="content float-end mt-2">
+      <h2>Parsian Canab Crop the New Agricultural and Industrial Company</h2>
+    </div>
+    <div class="float-end content-section">
+      <p>PCNB Co. is a private joint stock company that has been established since 2013 for enhancing research and developement improvements in the related scientific fields. <br>
+      We provide services to farmers and farm owners, from providing producting crops to selling all type products toward internal and exporting international markets. <br> You are so welcome on PCNB Co. Board, and 
+      we are honoured, establishing long-term heavy usefull connections to maintain responsible cooperations and coordinations to appropriate collaborations with whom interested in. <br>
+      below is our email address and you can get direct connection, please feel free to contact us!
+      </p>
+      <a href="mailto:parsiancanab@gmail.com" class="btn btn-info" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Contact Us</a>
+      <a href="{% url 'subscribe' %}" class="btn btn-info float-start"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Subscribe</a> 
+    </div>
+    <div class="float-end content-section">
+      <div class="farsi">
+        <p>
+           شرکت سهامی خاص کشت و صنعت نوین بذر پارسیان کنب، در سال ۱۳۹۲، در اداره ثبت شرکتها و مؤسسات غیرتجاری استان تهران، تأسیس گردیده است. اهم فعالیت‌های این مجموعه تحقیق و توسعه بر روی طرح‌های تولیدی تجاری کشت و صنعت می‌باشد و اجرای طرح جهت سرمایه‌گذاری با اهداف انتفاع شخصی و عمومی پیگیری می‌گردد. همچنین فعالیت‌های تحقیق و توسعه این مجموعه بصورت مستمر در زمینه‌های متنوعی ادامه دارد که می‌توان به تدوین جامع اقتصادی کنب به منظور جلب مشارکت متقاضیان ذی‌انتفاع، در همین راستا اشاره نمود که البته همه این فعالیت‌های علمی و عملی در حدود قانون اساسی جمهوری اسلامی ایران و در چارچوب اسناد و سیاستهای بالادستی می‌باشند. 
+        </p>
+        <a href="{% url 'subscribe' %}" class="btn btn-info float-start"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  عضویت</a>
+      </div>
+    </div>
+{% endblock content %}

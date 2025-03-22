@@ -1,0 +1,125 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="container-fluid" dir="rtl">
+      <a href="{% url 'blog-blog' %}" class="btn btn-default farsi" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> صفحه قبل</a>
+      <h1 class="farsi mt-3">جامع اقتصادی کنب</h1>
+      <p class="farsi">جامع اقتصادی کنب برگرفته از کشت نوین بذر و در خصوص ارائه خدمات کشت و صنعت در زمینه توسعه زراعت گیاهان صنعتی و توسعه باغبانی نهال اصلاح شده گیاهان دارویی به همراه خدمات تولید و تجارت و توسعه کشت قراردادی روشهای مذکور طبقه‌بندی می‌گردد و هر اجرا و توسعه هر بخش زنجیره‌های ارزش افزوده این طرح تولیدی را مهیا می‌نماید.  </p>
+    </div>
+    <ul class="nav nav-tabs mt-3 farsi" dir="rtl" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="agriculture-tab" data-bs-toggle="tab" data-bs-target="#agriculture-tab-pane" type="button" role="tab" aria-controls="agriculture-tab-pane" aria-selected="true">زراعت</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="horticulture-tab" data-bs-toggle="tab" data-bs-target="#horticulture-tab-pane" type="button" role="tab" aria-controls="horticulture-tab-pane" aria-selected="false">باغبانی</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="service-tab" data-bs-toggle="tab" data-bs-target="#service-tab-pane" type="button" role="tab" aria-controls="service-tab-pane" aria-selected="false">خدمات</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research-tab-pane" type="button" role="tab" aria-controls="research-tab-pane" aria-selected="false" >توسعه تحقیقات</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-tab-pane" type="button" role="tab" aria-controls="business-tab-pane" aria-selected="false" >توسعه تجارت</button>
+        </li>
+      </ul>
+      <div class="tab-content justify-content-end" dir="rtl" id="myTabContent">
+        <div class="tab-pane fade show active" id="agriculture-tab-pane" role="tabpanel" aria-labelledby="agriculture-tab" tabindex="0">
+          <p class="farsi mt-3">شرکت کشت و صنعت نوین بذر پارسیان کنب در نظر دارد تا با استفاده از فناوری‌های نوین و استفاده از ظرفیتهای
+            دانش بنیان، نسبت به اجرای کشت و توسعه زراعت گیاهان صنعتی و کنب اقدام نماید. بدین ترتیب با توجه به تقاضای کشت قراردادی از سوی کشاورزان متقاضی، اقدام به ثبت نام نموده و 
+             برای کشاورزان متقاضی قرارداد مزارعه ارسال می‌نماید تا پس از مطالعه متن و آشنایی با حدود و وظایف قانونی ذیل عقد مزارعه ، در صورت حصول رضایت، با ایشان
+             قرارداد منعقد می‌گردد. 
+          </p>
+        </div>
+        <div class="tab-pane fade" id="horticulture-tab-pane" role="tabpanel" aria-labelledby="horticulture-tab" tabindex="0">
+            <p class="farsi mt-3" dir="rtl">شرکت کشت و صنعت پارسیان نوین بذر پارسیان کنب در نظر دارد تا در بخش باغبانی با استفاده از ظرفیت‌ شرکتهای دانش‌بنیان فعال در حوزه کشت بافت اقدام
+            به اجرا و توسعه کشت قراردادی انواع نهال‌های استاندارد گل محمدی نماید. بدین ترتیب، پس از ثبت نام از متقاضیان کشت
+            گل محمدی، قرارداد مساقات برای ایشان ارسال می‌گردد تا ضمن مطالعه مفاد قرارداد نسبت به حدود وظایف طرفین ذیل قرارداد
+            آشنایی به عمل بیاید، سپس در صورت رضایت از شرایط انعقاد قرارداد و تبیین الزامات حقوقی پایبندی به حدود قرارداد، 
+            مراتب جهت تکمیل مراحل ثبت نام و آغاز تأمین رایگان نهاده رویشی استاندارد و ارائه خدمات مورد نیاز جهت آماده‌سازی زمین در سایت بارگزاری می‌گردد 
+            و در اختیار کشاورزان متقاضی قرار خواهد گرفت.</p>
+        </div>
+        <div class="tab-pane fade" id="service-tab-pane" role="tabpanel" aria-labelledby="service-tab" tabindex="0"><p class="farsi mt-3" dir="rtl">شرکت کشت و صنعت نوین بذر پارسیان کنب در نظر دارد تا در بخش خدمات، نسبت به ارائه خدمات متنوع در زمینه‌های گوناگون مرتبط اقدام نماید. خدمات در بخش کشت شامل بکارگیری مکانیزاسیون برای آماده‌سازی جهت بهبود عملکرد گیاه در واحد سطح و ردیف کاری صنعتی می‌باشد و در بخش صنعت شامل ایجاد و توسعه صنایع تبدیلی وابسته، جهت توسعه زنجیره ارزش و کاهش هزینه‌های مربوطه خواهد بود. در بخش فناوری ارتباطات و اطلاعات نیز خدمات در سطوح مختلف به منظور ثبت نام متقاضیان کشت و صنعت و خدمات اجرایی شده و توسعه می‌یابد. همچنین خدمات لجستیک جهت جابجایی و ذخیره‌سازی انواع محصولات نهایی و بسته‌بندی استاندارد صورت می‌پذیرد.</p></div>
+        <div class="tab-pane fade" id="research-tab-pane" role="tabpanel" aria-labelledby="research-tab" tabindex="0"><p class="farsi mt-3" dir="rtl">
+          در تمامی مراحل اجرایی تحقیق و توسعه موازی پیش‌بینی شده و با اجرای صحیح هر بخش از تولید، توسعه تحقیقات وابسته اجرایی خواهد شد و ابعاد متنوع علمی و عملی مورد نیاز جامع اقتصادی ذیربط را دربر می‌گیرد و رویکردهای علمی و تحقیقاتی مربوطه به منظور ایجاد تغییر در انواع فناوری‌های نوین وابسته اجرایی خواهد شد.
+          </p></div>
+        <div class="tab-pane fade" id="business-tab-pane" role="tabpanel" aria-labelledby="business-tab" tabindex="0"><p class="farsi mt-3" dir="rtl">در این بخش ماحصل یک کارگروهی به صورت کالاهایی دارای مزیت رقابتی برای عرضه در بازارهای بین‌المللی ارائه خواهد شد تا با بهره‌گیری از همه امکانات موجود در کشور و ظرفیتهای دانش‌بنیان نسبت به تغییر از وضع موجود به سمت فردایی بهتر گسیل گردد.</p></div>
+
+      </div>
+{% endblock content %}
+<div class="col-md-4">
+  {% block main %}
+  <div class="col-md-4">
+  <div class="content-section">
+    <div class="content">
+      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+    </div>
+    <h3 class="farsi" dir="rtl">درباره پارسیان کنب</h3>
+    <div class="content-section">
+      <ul class="list-group farsi" dir="rtl">
+        <li class="list-group-item list-group-item-light"><h4>اطلاعات</h4></li>
+          <p class="farsi mb-3 mt-2">شرکت سهامی خاص کشت و صنعت نوین بذر پارسیان کنب، در سال ۱۳۹۲ حول موضوع اجرا و توسعه طرح علمی و تحقیقاتی کشت و صنعت در چارچوب قانون، ثبت و تأسیس گردیده است.  </p>
+          <div class="flaot">
+            <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> درباره</a>
+          </div>
+        <li class="list-group-item list-group-item-light"><h4>ارتباطات</h4></li>
+          <p class="farsi mt-2">
+            در این بخش شما می‌توانید به صورت مستقیم با عوامل شرکت ارتباط برقرار نموده و در موارد مورد نیاز همکاری و همراهی نمایید.
+          </p>
+          <div>
+            <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  تماس</a>
+          </div>
+        <li class="list-group-item list-group-item-light"><h4>عضویت</h4></li>
+        <div>
+          <p class="farsi mt-2">
+            در این بخش شما می‌توانید با استفاده از لینک مربوطه نسبت به تکمیل فرم و عضویت در مجموعه مجازی کشت  صنعت کنب اقدام نمایید و بدین ترتیب در جریان طرحهای تولیدی و تجاری، اخبار و نحوه سرمایه گذاری در شرکت قرار بگیرید. 
+          </p>
+          <a href="{% url 'subscription' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  عضویت</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+    <div class="content-section farsi" dir="rtl">
+      <div class="content">
+        <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+      </div>
+      <h3>نوار ابزار جانبی</h3>
+      <p class='text'>سایر اطلاعات و نویسه‌ها
+        <ul class="list-group farsi">
+          <li class="list-group-item list-group-item-light">آخرین نویسه‌ها</li>
+          <li class="list-group-item list-group-item-light">اخبار و اطلاعات</li>
+          <li class="list-group-item list-group-item-light">تقویم روز</li>
+          <li class="list-group-item list-group-item-light">دیگر موارد</li>
+        </ul>
+      </p>
+    </div>
+    <div class="content-section" dir="rtl">
+      <div class="content">
+        <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+      </div>
+      <h3>اطلاعات</h3>
+      <div>
+      <div class="content-section">
+        <h3>زمان</h3>
+        <p>ساعت و تاریخ روز:<p id="demo"></p></p>
+        <a href="{% url 'blog-blog' %}" dir="rtl" class="farsi btn btn-info"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  پارسیان کنب</a>
+      </div>
+      <div class="content-section" dir="ltr">
+        <h3 class="farsi">نرخ برابری رمزارزها</h3>
+        <div id="currency-container">
+        </div>    
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'blog/main.js' %}"></script>
+  
+  {% endblock %}
+</div>
+
+{% block footer %}
+{% if show_custom_footer %}
+  <p>&copy; https://canab.ir. Custom footer</p>
+{% else %}
+  {{ block.super }}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>Date and Time</h1>
+<h2>Current Time: {{ current_time }}</h2>
+    <h3>Calendar:</h3>
+    {{ calendar_html|safe }}    
+    <div class="sidebar">
+        <h3>Daily Time</h3>
+        <p>Current Time: {{ current_time }}</p>
+    </div>
+
+    <div class="content">
+        <h2>Calendar</h2>
+        {{ calendar_html|safe }}
+    </div>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}
+        {% if message.tags %}
+            <li class="{{ message.tags }}">
+                {{ message }}
+            </li>
+        {% endif %}
+      {% endfor %}
+  {% endif %}
+{% endblock content %}

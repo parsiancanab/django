@@ -1,0 +1,51 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+  <h1>Subscription List</h1>
+
+  {% if subscribers %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for subscriber in subscribers %}
+          <tr>
+            <td>{{ subscriber.firstname }}</td>
+            <td>{{ subscriber.lastname }}</td>
+            <td>{{ subscriber.phone }}</td>
+            <td>{{ subscriber.email }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p>No subscribers yet.</p>
+  {% endif %}
+
+  {% if is_paginated %}
+    <div class="pagination mt-3">
+      {% if page_obj.has_previous %}
+        <a class="btn btn-outline-info" href="?page=1">First</a>
+        <a class="btn btn-outline-info" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      {% endif %}
+
+      {% for num in page_obj.paginator.page_range %}
+        {% if num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+          <a class="btn {% if page_obj.number == num %}btn-info{% else %}btn-outline-info{% endif %}" 
+             href="?page={{ num }}">{{ num }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if page_obj.has_next %}
+        <a class="btn btn-outline-info" href="?page={{ page_obj.next_page_number }}">Next</a>
+        <a class="btn btn-outline-info" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endblock %}

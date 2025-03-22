@@ -1,0 +1,46 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}
+    <h1>About Page</h1>
+    <div class="navbar bg-body-tertiary">
+      <a href="{% url 'blog-vpcnb' %}" class="btn btn-default" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> VPCNB</a>
+      <a href="/" class="btn btn-default" role="button">Home <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"></a>
+    </div> 
+    <h2>Parsian Canab Crop the New Agricultural and Industrial Company</h2>
+    <p>PCNB Co. is a private joint stock company that has been established since 2013 for enhancing research and developement improvements in the related scientific fields. <br>
+    We provide services to farmers and farm owners, from providing producing crops to selling theirs products toward exporting markets. <br> You are so welcome in PCNB Co. Your's, and 
+    we honouring establishing long-term heavy usefull connections to maintain responsible cooperations and coordinations to appropriate collaborations with whom interested in. <br>
+    below is our email address and you can get direct connection, please feel free to contact us!
+    </p>  
+    <a href="mailto:parsiancanab@gmail.com" class="btn btn-info" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Email Us</a>
+ 
+{% endblock content %}
+
+{% extends "blog/base.html" %}
+{% block content %}
+    
+{% render_calendar %}
+
+<html>
+<head>
+    <title>My Django Calendar</title>
+    <!-- Include FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Calendar container -->
+    <div id="calendar"></div>
+
+    <!-- Include FullCalendar JS and moment.js -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+
+    <!-- Include your calendar.js file -->
+    <script src="{% static 'path/to/your/calendar.js' %}"></script>
+</body>
+</html>
+
+
+
+
+{% endblock content %}

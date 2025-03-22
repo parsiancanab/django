@@ -1,0 +1,36 @@
+<!-- subscribers/templates/activation_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activate Subscription</title>
+</head>
+<body>
+    <div style="max-width: 600px; margin: auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h2 style="color: #333;">Activate Your Subscription</h2>
+        
+        <p>Hello <strong>{{ subscriber.firstname }}</strong>,</p>
+        <p>Hello <strong>{{ user.first_name }}</strong>,</p>
+        <p>Hello <strong>{{ user.username|default:user.email }}</strong>,</p>
+
+        <p>Thank you for subscribing! To complete your registration and activate your subscription, please click the button below:</p>
+        
+        <p style="text-align: center;">
+            <a href="{{ activation_link }}" 
+               style="display: inline-block; background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-size: 16px;">
+               Activate Subscription
+            </a>
+        </p>
+
+        <p>If the button above does not work, you can use the following link:</p>
+        <p><a href="{{ activation_link }}" style="word-wrap: break-word; color: #007bff;">{{ activation_link }}</a></p>
+        
+        <p>If you did not request this subscription, you can safely ignore this email.</p>
+
+        <p>Best regards,</p>
+        <p><strong>PCNB Co.</strong></p>
+    </div>
+</body>
+</html>
+
+
+
