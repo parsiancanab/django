@@ -2,28 +2,29 @@
 {% load static %}
 {% block content %}
     <div class="container-fluid" dir="rtl">
-      <a href="{% url 'blog-blog' %}" class="btn btn-default farsi" role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> صفحه قبل</a>
+      <a href="{% url 'blog-blog' %}" class="btn btn-default farsi" role="button"><img src="{% static 'blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> صفحه قبل</a>
       <h1 class="farsi">درباره شرکت مجازی</h1>
     </div>
     <nav>
-        <div class="nav nav-tabs mt-3 farsi" dir="rtl" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-CEO-tab" data-bs-toggle="tab" data-bs-target="#nav-CEO" type="button" role="tab" aria-controls="nav-CEO" aria-selected="true">مدیرعامل</button>
-          <button class="nav-link" id="nav-COO-tab" data-bs-toggle="tab" data-bs-target="#nav-COO" type="button" role="tab" aria-controls="nav-COO" aria-selected="false">مدیراجرایی</button>
-          <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CTO" type="button" role="tab" aria-controls="nav-CTO" aria-selected="false">مدیرفنی</button>
-          <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CISO" type="button" role="tab" aria-controls="nav-CISO" aria-selected="false">مدیرامنیت‌اطلاعات</button>
-          <button class="nav-link" id="nav-R&D-tab" data-bs-toggle="tab" data-bs-target="#nav-R&D" type="button" role="tab" aria-controls="nav-R&D" aria-selected="false">تحقیق و توسعه</button>
-          <button class="nav-link" id="nav-R&D-tab" data-bs-toggle="tab" data-bs-target="#nav-CIO" type="button" role="tab" aria-controls="nav-CIO" aria-selected="false">مدیر نوآوری</button>
-        </div>
-      </nav>
-      <div class="tab-content" id="nav-tabContent" dir="rtl">
-        <div class="tab-pane mt-5 active farsi" id="nav-CEO" role="tabpanel" aria-labelledby="nav-CEO-tab" tabindex="0"><h3>مدیرعامل</h3><p><div class="container-fluid">
-        </div></p><br><p><a href="mailto:ceo@pcnb.ir">ارسال مستقیم: رایانامه مدیر عامل</a></p><br></div>
-        <div class="tab-pane mt-5" id="nav-COO" role="tabpanel" aria-labelledby="nav-COO-tab" tabindex="0"><h3>مدیراجرایی</h3><p>alo</p></div>
-        <div class="tab-pane mt-5" id="nav-CTO" role="tabpanel" aria-labelledby="nav-CTO-tab" tabindex="0"><h3>مدیرفنی</h3><p>aloo</p></div>
-        <div class="tab-pane mt-5" id="nav-CISO" role="tabpanel" aria-labelledby="nav-CISO-tab" tabindex="0"><h3>مدیرامنیت‌اطلاعات</h3><p>aloova</p></div>
-        <div class="tab-pane mt-5" id="nav-R&D" role="tabpanel" aria-labelledby="nav-R&D-tab" tabindex="0"><h3>تحقیق و توسعه</h3><p>alooo</p></div>
-        <div class="tab-pane mt-5" id="nav-CIO" role="tabpanel" aria-labelledby="nav-CIO-tab" tabindex="0"><h3>مدیر نوآوری</h3><p>alooo</p></div>
+      <div class="nav nav-tabs mt-3 farsi" dir="rtl" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-CEO-tab" data-bs-toggle="tab" data-bs-target="#nav-CEO" type="button" role="tab" aria-controls="nav-CEO" aria-selected="true">مدیرعامل</button>
+        <button class="nav-link" id="nav-COO-tab" data-bs-toggle="tab" data-bs-target="#nav-COO" type="button" role="tab" aria-controls="nav-COO" aria-selected="false">مدیراجرایی</button>
+        <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CTO" type="button" role="tab" aria-controls="nav-CTO" aria-selected="false">مدیرفنی</button>
+        <button class="nav-link" id="nav-CTO-tab" data-bs-toggle="tab" data-bs-target="#nav-CISO" type="button" role="tab" aria-controls="nav-CISO" aria-selected="false">مدیرامنیت‌اطلاعات</button>
+        <button class="nav-link" id="nav-R&D-tab" data-bs-toggle="tab" data-bs-target="#nav-R&D" type="button" role="tab" aria-controls="nav-R&D" aria-selected="false">تحقیق و توسعه</button>
+        <button class="nav-link" id="nav-CIO-tab" data-bs-toggle="tab" data-bs-target="#nav-CIO" type="button" role="tab" aria-controls="nav-CIO" aria-selected="false">مدیر نوآوری</button>
+        <button class="nav-link" id="nav-Info-tab" data-bs-toggle="tab" data-bs-target="#nav-Info" type="button" role="tab" aria-controls="nav-Info" aria-selected="false">اطلاعات</button>
       </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent" dir="rtl">
+      <div class="tab-pane mt-5 active farsi" id="nav-CEO" role="tabpanel" aria-labelledby="nav-CEO-tab" tabindex="0"><h3>مدیرعامل</h3><br><p>شما مخاطبان عزیز می‌توانید در این بخش با مدیر عامل شرکت کشت و صنعت نوین بذر پارسیان کنب به صورت مستقیم ارتباط برقرار نمایید.</p><p><a href="mailto:ceo@pcnb.ir">ceo@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-COO" role="tabpanel" aria-labelledby="nav-COO-tab" tabindex="0"><h3>مدیراجرایی</h3><br><p><a href="mailto:coo@pcnb.ir">coo@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-CTO" role="tabpanel" aria-labelledby="nav-CTO-tab" tabindex="0"><h3>مدیرفنی</h3><br><p><a href="mailto:cto@pcnb.ir">cto@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-CISO" role="tabpanel" aria-labelledby="nav-CISO-tab" tabindex="0"><h3>مدیرامنیت‌اطلاعات</h3><br><p><a href="mailto:">ciso@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-R&D" role="tabpanel" aria-labelledby="nav-R&D-tab" tabindex="0"><h3>تحقیق و توسعه</h3><br><p><a href="mailto:research@pcnb.ir">research@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-CIO" role="tabpanel" aria-labelledby="nav-CIO-tab" tabindex="0"><h3>مدیر نوآوری</h3><br><p><a href="mailto:cio@pcnb.ir">cio@pcnb.ir</a></p></div>
+      <div class="tab-pane mt-5" id="nav-Info" role="tabpanel" aria-labelledby="nav-Info-tab" tabindex="0"><h3>اطلاعات</h3><br><p><a href="mailto:info@pcnb.ir">info@pcnb.ir</a></p></div>
+    </div>
 {% endblock content %}
   </div>
     <div class="col-md-4">
