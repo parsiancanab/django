@@ -14,19 +14,15 @@ from pathlib import Path
 import os
 import smtplib
 from email.mime.text import MIMEText
+from dotenv import load_dotenv # type: ignore 
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+load_dotenv()
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_KEY', 'default-insecure-key')
+SECRET_KEY = os.environ.get('DJANGO_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
@@ -34,15 +30,15 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'True') == 'True'
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['pcnb.ir', 'www.pcnb.ir', 'localhost', '127.0.0.1']
 
 
 TIME_ZONE = 'Asia/Iran'  # e.g., 'America/New_York' or 'Europe/London'
 
+
 USE_TZ = True
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
@@ -111,44 +107,17 @@ REST_FRAMEWORK = {
 }
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pcnb',
-        'USER': 'parsiancanab',
-        'PASSWORD': '@Mahan188',
-        'HOST': 'localhost',
-        'PORT': '5433',  # Default PostgreSQL port
-    }
-}
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+        'NAME': os.environ.get('DB_NAME', 'postgres'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'Milad188'),
+        'HOST': os.environ.get('DB_HOST', 'localhost'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
 
-
-'''
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'Milad188',
-        'HOST': 'localhost',  # Change if using a remote server
-        'PORT': '5432',  # Default PostgreSQL port
-    }
-}
-
-
-
-# Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -183,24 +152,19 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
-# Whitenoise settings
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
-
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 
+
 CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
@@ -209,34 +173,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_USER = "parsiancanab@gmail.com"
-EMAIL_HOST_PASSWORD = "ursp rjwc teic vegi"
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-# DEFAULT_FROM_EMAIL = 'parsiancanab@gmail.com'
-# DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')  # Default sender email
-
-DEFAULT_FROM_EMAIL = "no-reply@pcnb.ir"  # Default sender email
-
-
-
-'''
-sender_email = "parsiancanab@gmail.com"
-app_password = "ursp rjwc teic vegi"
-receiver_email = "yavari.milad@yahoo.com"
-
-msg = MIMEText("This is a test email")
-msg["Subject"] = "Test Email"
-msg["From"] = sender_email
-msg["To"] = receiver_email
-
-try:
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(sender_email, app_password)
-    server.sendmail(sender_email, receiver_email, msg.as_string())
-    server.quit()
-    print("Email sent successfully")
-except Exception as e:
-    print("Error:", e)
-'''
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
