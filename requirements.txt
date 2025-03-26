@@ -16,6 +16,7 @@ django-filter==23.2
 django-rest-framework==0.1.0
 django-scheduler==0.10.1
 djangorestframework==3.14.0
+gunicorn==23.0.0
 icalendar==5.0.7
 idna==3.4
 jsmin==3.0.1
