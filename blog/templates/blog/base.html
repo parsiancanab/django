@@ -2,8 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="agrindustrial servises">
@@ -18,20 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css" rel="stylesheet" />
-    <link rel="icon" type="image/x-icon" href="{% static 'blog/logo opacity.png' %}">
+    <link rel="icon" type="image/x-icon" alt="pcnblogo" href="{% static 'blog/logo opacity.png' %}">
+</head>
 
     {% if title %}
         <title>PCNB - {{ title }}</title>
     {% else %}
         <title>PCNB</title>
     {% endif %}
-</head>
 <body>
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
           <div class="container">
               <a class="navbar-brand" href="/">
-                <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                <img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
               </a>
             <a class="navbar-brand mr-2 font-weight-normal" href="{% url 'blog-vpcnb' %}">PCNB</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +53,7 @@
                 <a class="farsi nav-item nav-link" href="{% url 'subscription' %}">عضویت</a>
                 <a class="farsi nav-item nav-link" href="{% url 'blog-blog' %}">پارسیان کنب</a>
                 <a class="navbar-brand" href="/bloghome">
-                  <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                  <img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
                 </a>
               </div>
             </div>
@@ -78,7 +76,7 @@
           <div class="col-md-4">
             <div class="content-section">
               <div class="content">
-                <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
               </div>
               <h1>About PCNB Co.</h1>
               <div class="content-section">
@@ -90,28 +88,28 @@
                     below is our email address and you can get direct connection, please feel free to contact us!
                     </p>
                     <div class="flaot">
-                      <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3 mt-1"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> About Us</a>
+                      <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3 mt-1"  role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> About Us</a>
                     </div>
                   <li class="list-group-item list-group-item-light"><h4>Connection</h4></li>
                     <p class="mt-2">
                       The idea of having a well constructed business plan made us an important goals by implementing real scientific coordinations, collaborations and cooperations as well. please note that we appreciate any kind of positive connections.
                     </p>
                     <div>
-                      <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Contact Us</a>
+                      <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">  Contact Us</a>
                     </div>
                   <li class="list-group-item list-group-item-light"><h4>Subscription</h4></li>
                   <div>
                     <p class="mt-2">
                       For an effective information, being updated to company's notifications and news, it is possible via the link below; please feel free to subscribe and stay updated with Your's PCNB Co.
                     </p>
-                    <a href="{% url 'subscribe' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Subscribe</a>
+                    <a href="{% url 'subscribe' %}" class="btn btn-outline-info mb-3"  role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">  Subscribe</a>
                   </div>
                 </ul>
               </div>
             </div>
               <div class="content-section">
                 <div class="content">
-                  <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                  <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
                 </div>
                 <h1 class="float">Our Sidebar</h1>
                 <div class="content-section">
@@ -127,7 +125,7 @@
               </div>
               <div class="content-section">
                 <div class="content">
-                  <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                  <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
                 </div>
                 <h1>Digital Currencies</h1>
                   <div class="content-section">
@@ -138,7 +136,7 @@
                 <div class="ontent-section"> 
                   <div class="content-section">
                     <div class="content">
-                      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+                      <img class="m-2 float-start" src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">
                     </div>
                     <div id="calendar"></div>
                     <h1>Daily Calendar</h1>
@@ -147,7 +145,7 @@
                         <p id="demo"></p>
                       </div>
                     <div class="mt-3">
-                      <a href="{% url 'blog-blog' %}" dir="rtl" class="farsi btn btn-info"  role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  پارسیان کنب</a>
+                      <a href="{% url 'blog-blog' %}" dir="rtl" class="farsi btn btn-info"  role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">  پارسیان کنب</a>
                     </div>
                   </div>
                 {% endblock %}
