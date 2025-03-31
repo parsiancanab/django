@@ -1,4 +1,5 @@
 import secrets
+from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -12,6 +13,23 @@ from users.forms import SubscribeForm, SubscriptionForm
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from users.models import Profile
+from django.utils.translation import gettext as _
+from django.utils.translation import activate
+
+
+def set_language(request):
+    """
+    Sets the language for the current session to Persian (Farsi) and returns a greeting message.
+
+    Args:
+        request: The HTTP request object.
+
+    Returns:
+        HttpResponse: An HTTP response object containing the translated greeting message.
+    """
+    activate('fa')
+    return HttpResponse(_("Hello"))  # This will now return "سلام"
+
 
 # Home View
 def home(request):
@@ -241,3 +259,7 @@ def subscribe_user(request):
         profile.save()
         return redirect("success_page")
     return redirect("login")
+
+def my_view(request):
+    message = _("Hello")
+    return HttpResponse(message)

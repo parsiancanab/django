@@ -15,6 +15,7 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from dotenv import load_dotenv # type: ignore 
+from django.utils.translation import gettext_lazy as _
 
 
 load_dotenv()
@@ -40,6 +41,12 @@ TIME_ZONE = 'Asia/Iran'  # e.g., 'America/New_York' or 'Europe/London'
 USE_TZ = True
 
 
+LANGUAGES = [
+    ('en', _('English')),
+    ('fa', _('Farsi')),  # Add the second language
+]
+
+
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
@@ -62,11 +69,19 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware', 
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, 'locale'),
+]
+
+
 
 ROOT_URLCONF = 'django_project.urls'
 
@@ -87,15 +102,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
-
-
-LANGUAGES = [
-    ('en', 'English'),
-    ('fa', 'Farsi'),
-    ('ru', 'Russian'),
-    ('ar', 'Arabic'),
-    # Add any other languages you want to support
-]
 
 
 REST_FRAMEWORK = {
@@ -176,3 +182,15 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL')
+
+
+'''
+LANGUAGES = [
+    ('en', 'English'),
+    ('fa', 'Farsi'),
+    ('ru', 'Russian'),
+    ('ar', 'Arabic'),
+    # Add any other languages you want to support
+]
+
+'''

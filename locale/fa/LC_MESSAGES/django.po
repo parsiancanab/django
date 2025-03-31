@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-26 22:28+0330\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: django_project/settings.py:45
+msgid "English"
+msgstr "انگلیسی"
+
+#: django_project/settings.py:46
+msgid "Farsi"
+msgstr "فارسی"
+
+msgid "Hello"
+msgstr "سلام"
+
+msgid ""
+"PCNB Co. is a private joint-stock company established in 2013, dedicated to "
+"advancing research and development in related scientific fields. We offer "
+"comprehensive services to farmers and farm owners, from crop production to the "
+"sale of various agricultural products, catering to both domestic and international "
+"markets.\n"
+"We warmly welcome you to PCNB Co. and take pride in fostering long-term, meaningful "
+"partnerships. Our goal is to establish responsible collaborations with like-minded "
+"individuals and organizations.\n"
+"For direct communication, please find our email address below. Feel free to contact us!"
+msgstr ""
+"شرکت کشت و صنعت موین بذر پارسیان کنب، یک شرکت سهامی خاص است که در سال ۲۰۱۳ تأسیس شده و "
+"متعهد به پیشرفت تحقیق و توسعه در زمینه‌های علمی مرتبط می‌باشد. ما خدمات جامع و کاملی را "
+"به کشاورزان و مالکان مزارع ارائه می‌دهیم، از تولید محصولات کشاورزی گرفته تا فروش انواع "
+"محصولات برای بازارهای داخلی و بین‌المللی.\n"
+"با افتخار از شما در پارسیان کشت نوین بذر استقبال می‌کنیم و به ایجاد همکاری‌های طولانی‌مدت "
+"و سازنده افتخار می‌کنیم. هدف ما برقراری همکاری‌های مسئولانه با افراد و سازمان‌های هم‌فکر است.\n"
+"برای ارتباط مستقیم، لطفاً آدرس ایمیل ما را در زیر مشاهده کنید. با خیال راحت با ما تماس بگیرید!"
+
+msgid "Welcome"
+msgstr "خوش آمدید"
+
+msgid "PCNB"
+msgstr "پارسیان کشت نوین بذر"
+
+msgid ""
+"Hello, welcome to our website.\n"
+"Enjoy your stay!"
+msgstr ""
+"سلام، به وب‌سایت ما خوش آمدید.\n"
+"لطفاً لذت ببرید!"
+
+msgid ""
+"PCNB Co. is a private joint-stock company established in 2013,\n"
+"dedicated to advancing research and development in related scientific fields.\n"
+"We offer comprehensive services to farmers and farm owners, from crop production\n"
+" to the sale of various agricultural products, catering to both domestic and international markets.\n"
+"We warmly welcome you to PCNB Co. and take pride in fostering long-term, meaningful partnerships.\n"
+"Our goal is to establish responsible collaborations with like-minded individuals and organizations.\n"
+"For direct communication, please find our email address below. Feel free to contact us!"
+msgstr ""
+"شرکت PCNB یک شرکت سهامی خاص است که در سال ۲۰۱۳ تأسیس شده است،\n"
+"و به توسعه تحقیق و پژوهش در حوزه‌های علمی مرتبط اختصاص دارد.\n"
+"ما خدمات جامع و کاملی را به کشاورزان و مالکان مزارع ارائه می‌دهیم، از تولید محصولات کشاورزی\n"
+"تا فروش انواع محصولات زراعی، برای بازارهای داخلی و بین‌المللی.\n"
+"ما شما را به شرکت PCNB گرم‌ترین خوشامد می‌گوییم و به ایجاد همکاری‌های طولانی‌مدت و ارزشمند افتخار می‌کنیم.\n"
+"هدف ما برقراری همکاری‌های مسئولانه با افراد و سازمان‌های هم‌فکر است.\n"
+"برای ارتباط مستقیم، لطفاً آدرس ایمیل ما را در زیر مشاهده کنید. با ما در تماس باشید!"
+                      

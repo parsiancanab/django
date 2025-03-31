@@ -49,9 +49,6 @@ class SubscribeForm(forms.ModelForm):
             'email': 'E-mail',
             'phone': 'Phone'
         }
- 
-
-        
   
     
 class EventForm(forms.ModelForm):
