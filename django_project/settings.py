@@ -43,9 +43,18 @@ USE_TZ = True
 
 LANGUAGES = [
     ('en', _('English')),
-    ('fa', _('Farsi')),  # Add the second language
+    ('fa', _('Farsi')),  
 ]
 
+LANGUAGE_CODE = 'en'
+
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
+]
 
 INSTALLED_APPS = [
     'blog.apps.BlogConfig',
@@ -75,12 +84,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-
-LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'locale'),
-]
-
 
 
 ROOT_URLCONF = 'django_project.urls'

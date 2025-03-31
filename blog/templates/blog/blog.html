@@ -11,7 +11,7 @@
       </li>
       <li class="nav-item">
         <a href="{% url 'blog-blogthree' %}" class="btn btn-default" role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> درباره طرح تولیدی تجاری </a>
-        <a class="nav-link" href="{{ 'blogthree' }}"></a>
+        <a href="{{ 'blogthree' }}" class="nav-link"></a>
       </li>
       <li class="nav-item">
         <a href="{% url 'blog-blogfour' %}" class="btn btn-default" role="button"><img src="{% static '/blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> شرکت مجازی کنب </a>
@@ -118,4 +118,3 @@
     {{ block.super }}
   {% endif %}
 {% endblock %}
-
