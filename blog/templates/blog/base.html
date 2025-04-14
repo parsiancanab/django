@@ -93,21 +93,21 @@
                   <li class="list-group-item list-group-item-light"><h4>Information</h4></li>
                       <p class="mt-2">
                         {% blocktrans %}
-                        <p class="mt-2">
                           PCNB Co. is a private joint-stock company established in 2013, dedicated to advancing research and development in related scientific fields.
                           We offer comprehensive services to farmers and farm owners, from crop production to the sale of various agricultural products, catering to both domestic and international markets.                      
                           We warmly welcome you to PCNB Co. and take pride in fostering long-term, meaningful partnerships. Our goal is to establish responsible collaborations with like-minded individuals and organizations.                      
                           For direct communication, please find our email address below. Feel free to contact us!
-                        </p>
                         {% endblocktrans %}
                       </p>  
                     <div class="float">
                       <a href="{% url 'blog-about' %}" class="btn btn-outline-info mb-3 mt-1"  role="button"><img src="{% static 'blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30"> About Us</a>
                     </div>
                   <li class="list-group-item list-group-item-light"><h4>Connection</h4></li>
-                    <p class="mt-2">
-                      The idea of having a well constructed business plan made us an important goals by implementing real scientific coordinations, collaborations and cooperations as well. please note that we appreciate any kind of positive connections.
-                    </p>
+                      <p class="mt-2">
+                        {% blocktrans trimmed %}
+                          The idea of having a well constructed business plan made us set important goals by implementing real scientific coordination, collaboration, and cooperation. Please note that we appreciate any kind of positive connection.
+                        {% endblocktrans %}
+                      </p>  
                     <div>
                       <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info mb-3"  role="button"><img src="{% static 'blog/logo opacity.png' %}" alt="pcnblogo" width="30" height="30">  Contact Us</a>
                     </div>
