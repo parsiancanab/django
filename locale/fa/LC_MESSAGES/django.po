@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-14 22:12+0330\n"
+"POT-Creation-Date: 2025-04-14 23:18+0330\n"
 "PO-Revision-Date: 2025-04-14 22:30+0330\n"
 "Last-Translator: Milad Yavari <your@email.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -22,19 +22,19 @@ msgstr "خدمات کشاورزی و صنعتی"
 
 #: blog/templates/blog/base.html:9
 msgid "Agriculture, Industrial Hemp, PCNB, Farming, Crop, Sustainability"
-msgstr "کشاورزی، کنف صنعتی، پارسیان کنب، مزرعه، محصول، پایداری"
+msgstr "کشاورزی، کنب صنعتی، پارسیان کنب، مزرعه، محصول، پایداری"
 
 #: blog/templates/blog/base.html:10
 msgid "Milad Yavari, CEO of PCNB Co."
-msgstr "میلاد یاوری، مدیرعامل شرکت پارسیان کنب"
+msgstr "میلاد یاوری، مدیرعامل شرکت کشت و صنعت پارسیان کنب"
 
 #: blog/templates/blog/base.html:36 blog/templates/blog/base_shadow.html:39
 msgid "Home"
-msgstr ""
+msgstr "خانه"
 
 #: blog/templates/blog/base.html:37 blog/templates/blog/base_shadow.html:40
 msgid "About"
-msgstr ""
+msgstr "درباره"
 
 #: blog/templates/blog/base.html:39 blog/templates/blog/base_shadow.html:42
 msgid "New Post"
@@ -42,7 +42,7 @@ msgstr "ارسال مطلب جدید"
 
 #: blog/templates/blog/base.html:40 blog/templates/blog/base_shadow.html:43
 msgid "Profile"
-msgstr ""
+msgstr "پروفایل"
 
 #: blog/templates/blog/base.html:41 blog/templates/blog/base_shadow.html:44
 msgid "Logout"
@@ -50,16 +50,16 @@ msgstr "خروج"
 
 #: blog/templates/blog/base.html:43 blog/templates/blog/base_shadow.html:46
 msgid "Login"
-msgstr ""
+msgstr "ورود"
 
 #: blog/templates/blog/base.html:44 blog/templates/blog/base_shadow.html:47
 msgid "Register"
-msgstr ""
+msgstr "ثبت نام"
 
 #: blog/templates/blog/base.html:45 blog/templates/blog/base.html:115
 #: blog/templates/blog/base_shadow.html:48
 msgid "Subscribe"
-msgstr ""
+msgstr "عضو شوید"
 
 #: blog/templates/blog/base.html:54
 msgid "Language"
@@ -67,11 +67,11 @@ msgstr "زبان"
 
 #: blog/templates/blog/base.html:81 blog/templates/blog/base_shadow.html:90
 msgid "About PCNB Co."
-msgstr ""
+msgstr "درباره پارسیان کشت نوین بذر"
 
 #: blog/templates/blog/base.html:84 blog/templates/blog/base.html:125
 msgid "Information"
-msgstr ""
+msgstr "اطلاعات"
 
 #: blog/templates/blog/base.html:86
 msgid ""
@@ -85,10 +85,18 @@ msgid ""
 "For direct communication, please find our email address below. Feel free to "
 "contact us!"
 msgstr ""
+"شرکت پارسیان کشت نوین بذر، یک شرکت سهامی خاص است که در سال ۲۰۱۳ تأسیس شده "
+"است،و به توسعه تحقیق و پژوهش در حوزه‌های علمی مرتبط اختصاص دارد.ما خدمات جامع "
+"و کاملی را به کشاورزان و مالکان مزارع ارائه می‌دهیم، از تولید محصولات "
+"کشاورزیتا فروش انواع محصولات زراعی، برای بازارهای داخلی و بین‌المللی.ما شما "
+"را به شرکت PCNB گرم‌ترین خوشامد می‌گوییم و به ایجاد همکاری‌های طولانی‌مدت و "
+"ارزشمند افتخار می‌کنیم.هدف ما برقراری همکاری‌های مسئولانه با افراد و سازمان‌های "
+"هم‌فکر است.برای ارتباط مستقیم، لطفاً از طریق آدرس های الکترونیک ایمیل با ما در "
+"تماس باشید!"
 
 #: blog/templates/blog/base.html:92
 msgid "About Us"
-msgstr ""
+msgstr "درباره ما"
 
 #: blog/templates/blog/base.html:96
 msgid "Connection"
@@ -109,7 +117,7 @@ msgstr "تماس با ما"
 
 #: blog/templates/blog/base.html:108
 msgid "Subscription"
-msgstr ""
+msgstr "عضویت"
 
 #: blog/templates/blog/base.html:110
 msgid ""
@@ -121,7 +129,7 @@ msgstr ""
 
 #: blog/templates/blog/base.html:122
 msgid "Our Sidebar"
-msgstr "نوار کناری ما"
+msgstr "نوار کناری"
 
 #: blog/templates/blog/base.html:126
 msgid "PCNB Co. is a private joint-stock company..."
@@ -150,22 +158,6 @@ msgid ""
 msgstr "شرکت کشت و صنعت نوین پارسیان کنب. تمامی حقوق محفوظ است."
 
 #: blog/templates/blog/base_shadow.html:95
-#, fuzzy
-#| msgid ""
-#| "                          PCNB Co. is a private joint-stock company "
-#| "established in 2013, dedicated to advancing research and development in "
-#| "related scientific fields.\n"
-#| "                          We offer comprehensive services to farmers and "
-#| "farm owners, from crop production to the sale of various agricultural "
-#| "products, catering to both domestic and international "
-#| "markets.                      \n"
-#| "                          We warmly welcome you to PCNB Co. and take "
-#| "pride in fostering long-term, meaningful partnerships. Our goal is to "
-#| "establish responsible collaborations with like-minded individuals and "
-#| "organizations.                      \n"
-#| "                          For direct communication, please find our email "
-#| "address below. Feel free to contact us!\n"
-#| "                        "
 msgid ""
 "\n"
 "                          PCNB Co. is a private joint-stock company "
@@ -183,6 +175,7 @@ msgid ""
 "address below. Feel free to contact us!\n"
 "                        "
 msgstr ""
+"\n"
 "شرکت PCNB یک شرکت سهامی خاص است که در سال ۲۰۱۳ تأسیس شده است،\n"
 "و به توسعه تحقیق و پژوهش در حوزه‌های علمی مرتبط اختصاص دارد.\n"
 "ما خدمات جامع و کاملی را به کشاورزان و مالکان مزارع ارائه می‌دهیم، از تولید "
@@ -195,11 +188,6 @@ msgstr ""
 "باشید!"
 
 #: blog/templates/blog/base_shadow.html:107
-#, fuzzy
-#| msgid ""
-#| "The idea of having a well-constructed business plan led us to implement "
-#| "real scientific coordination, collaboration, and cooperation. We "
-#| "appreciate any kind of positive connection."
 msgid ""
 "The idea of having a well constructed business plan made us set important "
 "goals by implementing real scientific coordination, collaboration, and "
@@ -219,3 +207,6 @@ msgstr "انگلیسی"
 #: django_project/settings.py:46
 msgid "Farsi"
 msgstr "فارسی"
+
+#~ msgid "PCNB"
+#~ msgstr "پارسیان کشت نوین بذر"
