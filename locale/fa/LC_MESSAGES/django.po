@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 11:13+0330\n"
+"POT-Creation-Date: 2025-04-14 12:39+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -27,7 +27,27 @@ msgstr "درباره"
 
 #: blog/templates/blog/base.html:42
 msgid "New Post"
-msgstr "نویسه جدید"
+msgstr ""
+
+#: blog/templates/blog/base.html:43
+msgid "Profile"
+msgstr "پروفایل"
+
+#: blog/templates/blog/base.html:44
+msgid "Logout"
+msgstr ""
+
+#: blog/templates/blog/base.html:46
+msgid "Login"
+msgstr "ورود"
+
+#: blog/templates/blog/base.html:47
+msgid "Register"
+msgstr "ثبت نام"
+
+#: blog/templates/blog/base.html:48
+msgid "Subscribe"
+msgstr "عضویت"
 
 #: blog/templates/blog/base.html:90
 msgid "About PCNB Co."

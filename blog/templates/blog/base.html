@@ -40,12 +40,12 @@
                 <a class="nav-item nav-link" href="{% url 'blog-about' %}">{% trans "About" %}</a>
                 {% if user.is_authenticated %}
                   <a class="nav-item nav-link" href="{% url 'post-create' %}">{% trans "New Post" %}</a>
-                  <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
-                  <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                  <a class="nav-item nav-link" href="{% url 'profile' %}">{% trans "Profile" %}</a>
+                  <a class="nav-item nav-link" href="{% url 'logout' %}">{% trans "Logout" %}</a>
                 {% else %}
-                  <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
-                  <a class="nav-item nav-link" href="{% url 'register' %}">Register</a>
-                  <a class="nav-item nav-link" href="{% url 'subscribe' %}">Subscribe</a>
+                  <a class="nav-item nav-link" href="{% url 'login' %}">{% trans "Login" %}</a>
+                  <a class="nav-item nav-link" href="{% url 'register' %}">{% trans "Register" %}</a>
+                  <a class="nav-item nav-link" href="{% url 'subscribe' %}">{% trans "Subscribe" %}</a>
                 {% endif %}
               </div>
             </div>
