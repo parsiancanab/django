@@ -1,36 +1,45 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% load static %}
+{% load i18n %}
 {% block content %}
-
+{% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'fa' %}
+    <link rel="stylesheet" href="{% static 'blog/css/farsi.css' %}">
+  {% endif %}
 <h1>Subscription</h1>
   <div class="content-section">
     <form method="post">
         {% csrf_token %}
         <fieldset class="form-group">
           <div>
-            <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">
+            <img src="{% static '/blog/logo opacity.png' %}" alt="logo" width="30" height="30">
           </div>
-          <center><img class="justify-content-end" src="{% static '/blog/dried rose buds.png' %}" style="align-self: end;"  width="400" ></center>
-          <legend class="border-bottom mb-4 m-1"><small class="small">Welcome to the Parsian Canab Crop the New Agricultural and Industrial Company, PCNB Co. You can subscribe to our mailing list to consider related news and business plan conditions to approach connecting solutions. Please fill out the form below.</small></legend>
+          <center><img class="justify-content-end" src="{% static '/blog/dried rose buds.png' %}" alt="dried-rose-buds" style="align-self: end;"  width="400" ></center>
+          <legend class="border-bottom mb-4 m-1">
+            <small class="small">
+              {% blocktrans trimmed %}
+                Welcome to the Parsian Canab Crop the New Agricultural and Industrial Company, PCNB Co. You can subscribe to our mailing list to consider related news and business plan conditions to approach connecting solutions. Please fill out the form below.
+              {% endblocktrans %}
+            </small>
+          </legend>
           {{ form|crispy }}
         </fieldset>      
         <div>
-          <button class="btn btn-outline-info mb-3" role="button" type="submit" dir="ltr"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"> Subscribe</button>
+          <button class="btn btn-outline-info mb-3" role="button" type="submit" dir="ltr"><img src="{% static '/blog/logo opacity.png' %}" alt="logo" width="30" height="30">{% trans "Subscribe" %} </button>
         </div>
     </form>
   </div>
 {% endblock content %}
-</div>
   {% if messages %}
     <ul class="messages">
       {% for message in messages %}
         {% if message.tags %}
-            <li class="{{ message.tags }}">
-                {{ message }}
-            </li>
+          <li class="{{ message.tags }}">
+            {{ message }}
+          </li>
         {% endif %}
       {% endfor %}
     </ul>
   {% endif %}
-  
+</div>

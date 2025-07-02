@@ -1,6 +1,11 @@
 {% extends "blog/base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
+{% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'fa' %}
+      <link rel="stylesheet" href="{% static 'blog/css/farsi.css' %}">
+    {% endif %}
   <div class="row">
     <div class="navbar bg-body-tertiary" dir="rtl">
       <a href="{% url 'blog-blog' %}" class="btn btn-default farsi font-weight-bold" role="button">شرکت کشت و صنعت نوین بذر پارسیان کنب  <img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30"></a>
@@ -12,14 +17,17 @@
       </map>
     </div>
   </div>
-  <div class="content float-end mt-2">
-    <h2>Parsian Canab Crop the New Agricultural and Industrial Company</h2>
+  <div class="content float-start mt-2 p-2">
+    <h2>{% trans "Parsian Canab Crop the New Agricultural and Industrial Company" %}</h2>
   </div>
-  <div class="float-end content-section">
-    <p>PCNB Co. is a private joint stock company that has been established since 2013 for enhancing research and developement improvements in the related scientific fields. <br>
-    We provide services to farmers and farm owners, from providing producting crops to selling all type products toward internal and exporting international markets. <br> You are so welcome on PCNB Co. Board, and 
-    we are honoured, establishing long-term heavy usefull connections to maintain responsible cooperations and coordinations to appropriate collaborations with whom interested in. <br>
-    below is our email address and you can get direct connection, please feel free to contact us!
+  <div class="float-end content-section"> 
+    <p>
+      {% blocktrans trimmed %}
+        PCNB Co. is a private joint stock company that has been established since 2013 for enhancing research and developement improvements in the related scientific fields. <br>
+        We provide services to farmers and farm owners, from providing producting crops to selling all type products toward internal and exporting international markets. <br> You are so welcome on PCNB Co. Board, and 
+        we are honoured, establishing long-term heavy usefull connections to maintain responsible cooperations and coordinations to appropriate collaborations with whom interested in. <br>
+        below is our email address and you can get direct connection, please feel free to contact us!
+      {% endblocktrans %}
     </p>
     <a href="mailto:parsiancanab@gmail.com" class="btn btn-outline-info" role="button"><img src="{% static '/blog/logo opacity.png' %}"  width="30" height="30">  Contact Us</a>
     <p class="mt-3">You can sign up easily using the registration link via the related page, please note that you will get a personal account thet wil be used for many actions in this site.</p>
