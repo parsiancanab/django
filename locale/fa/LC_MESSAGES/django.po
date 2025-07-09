@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-27 13:33+0330\n"
+"POT-Creation-Date: 2025-07-09 19:08+0330\n"
 "PO-Revision-Date: 2025-04-14 22:30+0330\n"
 "Last-Translator: Milad Yavari <your@email.com>\n"
 "Language-Team: Persian <fa@li.org>\n"
@@ -73,7 +73,7 @@ msgstr "زبان"
 msgid "About PCNB Co."
 msgstr "درباره پارسیان کشت نوین بذر"
 
-#: blog/templates/blog/base.html:87 blog/templates/blog/base.html:128
+#: blog/templates/blog/base.html:87 blog/templates/blog/base.html:127
 msgid "Information"
 msgstr "اطلاعات"
 
@@ -115,7 +115,7 @@ msgstr ""
 "ایده‌ی داشتن یک برنامه‌ریزی تجاری دقیق ما را بر آن داشت تا هماهنگی، همکاری و "
 "همیاری علمی واقعی را پیاده‌سازی کنیم. ما از هرگونه ارتباط مثبت استقبال می‌کنیم."
 
-#: blog/templates/blog/base.html:107
+#: blog/templates/blog/base.html:107 blog/templates/blog/home.html:32
 msgid "Contact Us"
 msgstr "تماس با ما"
 
@@ -200,11 +200,11 @@ msgstr ""
 "ایده‌ی داشتن یک برنامه‌ریزی تجاری دقیق ما را بر آن داشت تا هماهنگی، همکاری و "
 "همیاری علمی واقعی را پیاده‌سازی کنیم. ما از هرگونه ارتباط مثبت استقبال می‌کنیم."
 
-#: blog/templates/blog/home.html:17
+#: blog/templates/blog/home.html:21
 msgid "Parsian Canab Crop the New Agricultural and Industrial Company"
 msgstr "شرکت کشت و صنعت نوین پارسیان کنب"
 
-#: blog/templates/blog/home.html:21
+#: blog/templates/blog/home.html:25
 msgid ""
 "PCNB Co. is a private joint stock company that has been established since "
 "2013 for enhancing research and developement improvements in the related "
@@ -216,10 +216,29 @@ msgid ""
 "collaborations with whom interested in. <br> below is our email address and "
 "you can get direct connection, please feel free to contact us!"
 msgstr ""
-"شرکت کشت و صنعت نوین بذر پارسیان کنب یک شرکت سهامی خاص است که از سال ۲۰۱۳ به منظور ارتقاء پژوهش و توسعه در زمینه‌های علمی مرتبط تأسیس شده است. <br> "
-"ما خدمات متنوعی به کشاورزان و صاحبان مزارع ارائه می‌دهیم؛ از تولید محصولات کشاورزی گرفته تا فروش انواع محصولات در بازارهای داخلی و صادرات به بازارهای بین‌المللی. <br> "
-"حضور شما را در مجموعه شرکت کشت و صنعت نوین بذر پارسیان کنب صمیمانه خوش‌آمد می‌گوییم و به ایجاد ارتباطات مؤثر و پایدار در راستای همکاری‌های مسئولانه، هماهنگی‌های علمی و مشارکت‌های مفید با علاقه‌مندان افتخار می‌کنیم. <br> "
-"در ادامه، آدرس ایمیل ما درج شده است و می‌توانید به صورت مستقیم با ما در ارتباط باشید. لطفاً در تماس با ما تردید نکنید!"
+"شرکت کشت و صنعت نوین بذر پارسیان کنب یک شرکت سهامی خاص است که از سال ۲۰۱۳ به "
+"منظور ارتقاء پژوهش و توسعه در زمینه‌های علمی مرتبط تأسیس شده است. <br> ما "
+"خدمات متنوعی به کشاورزان و صاحبان مزارع ارائه می‌دهیم؛ از تولید محصولات "
+"کشاورزی گرفته تا فروش انواع محصولات در بازارهای داخلی و صادرات به بازارهای "
+"بین‌المللی. <br> حضور شما را در مجموعه شرکت کشت و صنعت نوین بذر پارسیان کنب "
+"صمیمانه خوش‌آمد می‌گوییم و به ایجاد ارتباطات مؤثر و پایدار در راستای همکاری‌های "
+"مسئولانه، هماهنگی‌های علمی و مشارکت‌های مفید با علاقه‌مندان افتخار می‌کنیم. <br> "
+"در ادامه، آدرس ایمیل ما درج شده است و می‌توانید به صورت مستقیم با ما در "
+"ارتباط باشید. لطفاً در تماس با ما تردید نکنید!"
+
+#: blog/templates/blog/home.html:34
+msgid ""
+"You can sign up easily using the registration link via the related page, "
+"please note that you will get a personal account thet wil be used for many "
+"actions in this site."
+msgstr ""
+"شما می‌توانید به‌راحتی از طریق لینک موجود در صفحه مربوطه ثبت‌نام کنید. لطفاً "
+"توجه داشته باشید که یک حساب کاربری شخصی برای شما ایجاد می‌شود که برای انجام "
+"امور مختلف در این سایت قابل استفاده خواهد بود."
+
+#: blog/templates/blog/home.html:38
+msgid "Sign Up"
+msgstr ""
 
 #: blog/templates/blog/subscribe.html:21
 msgid ""

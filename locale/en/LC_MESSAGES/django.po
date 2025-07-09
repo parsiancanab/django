@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-26 22:28+0330\n"
+"POT-Creation-Date: 2025-07-09 19:10+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,208 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: blog/templates/blog/base.html:8
+msgid "agrindustrial services"
+msgstr ""
+
+#: blog/templates/blog/base.html:9
+msgid ""
+"Agriculture, Industrial Hemp, PCNB, PCNB Co., Farming, Crop, Sustainability"
+msgstr ""
+
+#: blog/templates/blog/base.html:10
+msgid "Milad Yavari, CEO of PCNB Co."
+msgstr ""
+
+#: blog/templates/blog/base.html:39 blog/templates/blog/base_shadow.html:39
+msgid "Home"
+msgstr ""
+
+#: blog/templates/blog/base.html:40 blog/templates/blog/base_shadow.html:40
+msgid "About"
+msgstr ""
+
+#: blog/templates/blog/base.html:42 blog/templates/blog/base_shadow.html:42
+msgid "New Post"
+msgstr ""
+
+#: blog/templates/blog/base.html:43 blog/templates/blog/base_shadow.html:43
+msgid "Profile"
+msgstr ""
+
+#: blog/templates/blog/base.html:44 blog/templates/blog/base_shadow.html:44
+msgid "Logout"
+msgstr ""
+
+#: blog/templates/blog/base.html:46 blog/templates/blog/base_shadow.html:46
+msgid "Login"
+msgstr ""
+
+#: blog/templates/blog/base.html:47 blog/templates/blog/base_shadow.html:47
+msgid "Register"
+msgstr ""
+
+#: blog/templates/blog/base.html:48 blog/templates/blog/base.html:118
+#: blog/templates/blog/base_shadow.html:48
+#: blog/templates/blog/subscribe.html:29
+msgid "Subscribe"
+msgstr ""
+
+#: blog/templates/blog/base.html:57
+msgid "Language"
+msgstr ""
+
+#: blog/templates/blog/base.html:84 blog/templates/blog/base_shadow.html:90
+msgid "About PCNB Co."
+msgstr ""
+
+#: blog/templates/blog/base.html:87 blog/templates/blog/base.html:127
+msgid "Information"
+msgstr ""
+
+#: blog/templates/blog/base.html:89
+msgid ""
+"PCNB Co. is a private joint-stock company established in 2013, dedicated to "
+"advancing research and development in related scientific fields. We offer "
+"comprehensive services to farmers and farm owners, from crop production to "
+"the sale of various agricultural products, catering to both domestic and "
+"international markets. We warmly welcome you to PCNB Co. and take pride in "
+"fostering long-term, meaningful partnerships. Our goal is to establish "
+"responsible collaborations with like-minded individuals and organizations. "
+"For direct communication, please find our email address below. Feel free to "
+"contact us!"
+msgstr ""
+
+#: blog/templates/blog/base.html:95
+msgid "About Us"
+msgstr ""
+
+#: blog/templates/blog/base.html:99
+msgid "Connection"
+msgstr ""
+
+#: blog/templates/blog/base.html:101
+msgid ""
+"The idea of having a well-constructed business plan led us to implement real "
+"scientific coordination, collaboration, and cooperation. We appreciate any "
+"kind of positive connection."
+msgstr ""
+
+#: blog/templates/blog/base.html:107 blog/templates/blog/home.html:32
+msgid "Contact Us"
+msgstr ""
+
+#: blog/templates/blog/base.html:111
+msgid "Subscription"
+msgstr ""
+
+#: blog/templates/blog/base.html:113
+msgid ""
+"Stay updated with PCNB Co.'s notifications and news by subscribing through "
+"the link below. We look forward to keeping in touch!"
+msgstr ""
+
+#: blog/templates/blog/base.html:125
+msgid "Our Sidebar"
+msgstr ""
+
+#: blog/templates/blog/base.html:129
+msgid "PCNB Co. is a private joint-stock company..."
+msgstr ""
+
+#: blog/templates/blog/base.html:136
+msgid "Digital Currencies"
+msgstr ""
+
+#: blog/templates/blog/base.html:143
+msgid "Daily Calendar"
+msgstr ""
+
+#: blog/templates/blog/base.html:145
+msgid "Date and Time"
+msgstr ""
+
+#: blog/templates/blog/base.html:150
+msgid "پارسیان کنب"
+msgstr ""
+
+#: blog/templates/blog/base.html:162
+msgid ""
+"Parsian Canab Crop the New Agricultural and Industrial Company. All rights "
+"reserved."
+msgstr ""
+
+#: blog/templates/blog/base_shadow.html:95
+msgid ""
+"\n"
+"                          PCNB Co. is a private joint-stock company "
+"established in 2013, dedicated to advancing research and development in "
+"related scientific fields.\n"
+"                          We offer comprehensive services to farmers and "
+"farm owners, from crop production to the sale of various agricultural "
+"products, catering to both domestic and international "
+"markets.                      \n"
+"                          We warmly welcome you to PCNB Co. and take pride "
+"in fostering long-term, meaningful partnerships. Our goal is to establish "
+"responsible collaborations with like-minded individuals and "
+"organizations.                      \n"
+"                          For direct communication, please find our email "
+"address below. Feel free to contact us!\n"
+"                        "
+msgstr ""
+
+#: blog/templates/blog/base_shadow.html:107
+msgid ""
+"The idea of having a well constructed business plan made us set important "
+"goals by implementing real scientific coordination, collaboration, and "
+"cooperation. Please note that we appreciate any kind of positive connection."
+msgstr ""
+
+#: blog/templates/blog/home.html:21
+msgid "Parsian Canab Crop the New Agricultural and Industrial Company"
+msgstr ""
+
+#: blog/templates/blog/home.html:25
+msgid ""
+"PCNB Co. is a private joint stock company that has been established since "
+"2013 for enhancing research and developement improvements in the related "
+"scientific fields. <br> We provide services to farmers and farm owners, from "
+"providing producting crops to selling all type products toward internal and "
+"exporting international markets. <br> You are so welcome on PCNB Co. Board, "
+"and we are honoured, establishing long-term heavy usefull connections to "
+"maintain responsible cooperations and coordinations to appropriate "
+"collaborations with whom interested in. <br> below is our email address and "
+"you can get direct connection, please feel free to contact us!"
+msgstr ""
+
+#: blog/templates/blog/home.html:34
+msgid ""
+"You can sign up easily using the registration link via the related page, "
+"please note that you will get a personal account thet wil be used for many "
+"actions in this site."
+msgstr ""
+
+#: blog/templates/blog/home.html:38
+msgid "Sign Up"
+msgstr ""
+
+#: blog/templates/blog/subscribe.html:21
+msgid ""
+"Welcome to the Parsian Canab Crop the New Agricultural and Industrial "
+"Company, PCNB Co. You can subscribe to our mailing list to consider related "
+"news and business plan conditions to approach connecting solutions. Please "
+"fill out the form below."
+msgstr ""
+
+#: blog/views.py:31 blog/views.py:264
+msgid "Hello"
+msgstr ""
+
 #: django_project/settings.py:45
 msgid "English"
 msgstr ""
 
 #: django_project/settings.py:46
 msgid "Farsi"
-msgstr ""
+msgstr "فارسی"
